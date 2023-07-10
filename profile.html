@@ -1,35 +1,87 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link href="styles.css" rel="stylesheet">
+	<title>Misha's Profile</title>
+	<link href="styles.css" rel="stylesheet">
 </head>
 <body>
-    <nav>
+	<nav>
 		<ol>
 	        <li class="crumb"><a href="./home.html">Home</a></li>
-	        <li class="crumb"><a href="./neighborhood.html">Neighborhood</a></li>
+	        <li class="crumb"><a href="./profile.html">Profile</a></li>
 	        <li class="crumb"><a href="./about.html">About</a></li>
+            <li class="crumb"><a href="./neighborhood.html">Neighborhood</a></li> 
 	    </ol>
 	</nav>
-    <header>Hello, my name is Svetlana</header>
-    <button onclick="color()" id="color">My Favorite Color</button>
-   <button onclick="place()" id="place">My Favorite Place</button>
-   <button onclick="ritual()" id="ritual">My Favorite Ritual</button>
-    <main>	
-        <img onmouseover= 'netflix(this)' src="https://i.pcmag.com/imagery/reviews/05cItXL96l4LE9n02WfDR0h-5..v1582751026.png">
-<img onmouseover= 'career(this)' src="https://technoclinic.com/wp-content/uploads/2021/12/Top-8-programming-blogs-that-every-software-developer-must-read.jpg" >
-<img onmouseover= 'feel(this)' src="https://images.theconversation.com/files/180392/original/file-20170731-22175-1cjv391.jpg?ixlib=rb-1.1.0&q=20&auto=format&w=320&fit=clip&dpr=2&usm=12&cs=strip">
-</main>
-<button onclick="WillSee()" class="button"> "The road to success and the road to failure are almost exactly the same."</button>
-    <script src="about.js"></script>
+
+	<main>
+		<header>
+			<h1>Welcome to Misha's Profile</h1>
+			<img src="https://c8.alamy.com/comp/2E30DMT/sad-programmer-working-from-home-remote-home-office-a-man-with-glasses-looks-at-the-monitor-remote-work-concept-image-2E30DMT.jpg" alt="Misha's Profile Picture">
+		</header>
+
+		<section>
+			<h2>About Me</h2>
+			<p>
+				Hello! My name is Misha, and I'm a passionate front-end web developer. I love creating beautiful and user-friendly websites that leave a lasting impression. With my strong HTML, CSS, and JavaScript skills, I strive to build engaging web experiences.
+			</p>
+		</section>
+
+		<section>
+			<h2>Skills</h2>
+			<ul>
+				<li>HTML5</li>
+				<li>CSS3</li>
+				<li>JavaScript</li>
+				<li>Responsive Design</li>
+				<li>UI/UX Design</li>
+			</ul>
+		</section>
+
+        <button id="color" class="favorite-button">My Favorite Color</button>
+        <button id="place" class="favorite-button">My Favorite Place</button>
+        <button id="ritual" class="favorite-button">My Favorite Ritual</button>
+        
+
+		<section>
+			<h2>Favorite Things</h2>
+			<div class="favorite-container">
+               
+                <div class="favorite-block">
+                    <p class="favorite-heading">Favorite Sport</p>
+                    <h2 class="favorite-content">Euro Football</h2>
+                </div>
+        
+				<div class="favorite-block">
+					<p class="favorite-heading">Favorite Sports Team</p>
+					<h2 class="favorite-content">Valencia C.F.</h2>
+				</div>
+
+				<div class="favorite-block">
+					<p class="favorite-heading">Favorite Food</p>
+					<h2 class="favorite-content">Kasha<h2>
+				</div>
+
+			</div>
+		</section>
+
+		<section>
+			<h2>Contact Me</h2>
+			<form>
+				<label for="name">Name:</label>
+				<input type="text" id="name" name="name" required>
+
+				<label for="email">Email:</label>
+				<input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <br>
+                <textarea id="message" name="message" required></textarea>
+                <input type="submit" value="Send Message">
+			</form>
+		</section>
+	</main>
+
+	<script src="profile.js"></script>
 </body>
 </html>
-
-<br>
-<br>
-
-<a href="./home.html"><< Back </a>
